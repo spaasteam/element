@@ -1,6 +1,6 @@
 {
-  "name": "element-theme-chalk",
-  "version": "2.12.0",
+  "name": "@spaas/dr-theme-chalk",
+  "version": "2.13.4",
   "description": "Element component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
@@ -9,7 +9,8 @@
     "src"
   ],
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "pub": "gulp build && npm publish --registry=http://129.204.96.188:4873"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   ],
   "homepage": "https://github.com/FEMessage/element#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cssmin": "^0.1.7",
     "gulp-sass": "^3.1.0",
     "gulp-autoprefixer": "^4.0.0"
