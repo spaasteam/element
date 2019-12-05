@@ -18,7 +18,8 @@ if [ "$SPAAS_THEME_CHALK_VERSION" ]; then
   # build sub folder
   echo $SPAAS_THEME_CHALK_VERSION
 
-  SUB_FOLDER=${$SPAAS_THEME_CHALK_VERSION%.*}
+  FOLDER=$SPAAS_THEME_CHALK_VERSION
+  SUB_FOLDER=${FOLDER%.*}
   mkdir $SUB_FOLDER
   rm -rf *.js *.css *.map static
   rm -rf $SUB_FOLDER/**
@@ -42,7 +43,8 @@ then
   # build sub folder
   echo $DR_THEME_CHALK_VERSION
 
-  SUB_FOLDER=${$DR_THEME_CHALK_VERSION%.*}
+  FOLDER=$DR_THEME_CHALK_VERSION
+  SUB_FOLDER=${FOLDER%.*}
   mkdir -p "dr/${SUB_FOLDER}"
   cd ./dr
   rm -rf *.js *.css *.map static
