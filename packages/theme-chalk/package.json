@@ -1,6 +1,6 @@
 {
   "name": "@spaas/dr-theme-chalk",
-  "version": "2.12.3",
+  "version": "2.12.4",
   "description": "Element component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
