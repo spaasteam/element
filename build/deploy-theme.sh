@@ -11,7 +11,7 @@ fi
 # release
 if [ "$SPAAS_THEME_CHALK_VERSION" ]; then
   # build site
-  npm run stdver
+  npm run build:file
   npm run deploy:build
   cd temp_web
   git clone --depth 1 -b gh-pages --single-branch https://$ROT_TOKEN@github.com/spaasteam/element.git && cd element
@@ -35,7 +35,7 @@ if [ "$SPAAS_THEME_CHALK_VERSION" ]; then
 elif [ "$DR_THEME_CHALK_VERSION" ]
 then
   # build site
-  npm run stdver
+  npm run build:file
   npm run deploy:build
   cd temp_web
   git clone --depth 1 -b gh-pages --single-branch https://$ROT_TOKEN@github.com/spaasteam/element.git && cd element
