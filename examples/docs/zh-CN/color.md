@@ -20,20 +20,20 @@
     'borderExtraLight': '$--border-color-extra-light'
   };
   const original = {
-    primary: '#409EFF',
-    success: '#67C23A',
-    warning: '#E6A23C',
-    danger: '#F56C6C',
-    info: '#909399',
+    primary: '#5D81F9',
+    success: '#02C5E2',
+    warning: '#F5A623',
+    danger: '#E24156',
+    info: '#6A6E7B',
     white: '#FFFFFF',
     black: '#000000',
-    textPrimary: '#303133',
-    textRegular: '#606266',
-    textSecondary: '#909399',
-    textPlaceholder: '#C0C4CC',
-    borderBase: '#DCDFE6',
-    borderLight: '#E4E7ED',
-    borderLighter: '#EBEEF5',
+    textPrimary: '#2D303B',
+    textRegular: '#575962', // #2D303B
+    textSecondary: '#818389', // #93959b
+    textPlaceholder: '#9CA6C7',
+    borderBase: '#E4E8F3', // #CAD1E8
+    borderLight: '#E1E5F0', // CAD1E8
+    borderLighter: '#CAD1E8', // EBEEF5
     borderExtraLight: '#F2F6FC'
   }
   export default {
@@ -101,7 +101,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
 <el-row :gutter="12">
   <el-col :span="10" :xs="{span: 12}">
     <div class="demo-color-box" :style="{ background: primary }">Brand Color
-      <div class="value">#409EFF</div>
+      <div class="value">#5D81F9</div>
       <div class="bg-color-sub" :style="{ background: tintColor(primary, 0.9) }">
         <div
           class="bg-blue-sub-item"
@@ -122,7 +122,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box"
     :style="{ background: success }"
-    >Success<div class="value">#67C23A</div>
+    >Success<div class="value">#02C5E2</div>
       <div 
         class="bg-color-sub"
       >
@@ -139,7 +139,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box"
     :style="{ background: warning }"
-    >Warning<div class="value">#E6A23C</div>
+    >Warning<div class="value">#F5A623</div>
       <div 
           class="bg-color-sub"
         >
@@ -156,7 +156,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box"
     :style="{ background: danger }"
-    >Danger<div class="value">#F56C6C</div>
+    >Danger<div class="value">#E24156</div>
       <div 
           class="bg-color-sub"
         >
@@ -173,7 +173,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box"
     :style="{ background: info }"
-    >Info<div class="value">#909399</div>
+    >Info<div class="value">#6A6E7B</div>
       <div 
           class="bg-color-sub"
         >
@@ -235,7 +235,7 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
       >基础黑色<div class="value">{{black}}</div></div>
       <div
       class="demo-color-box demo-color-box-other"
-      :style="{ background: white, color: '#303133', border: '1px solid #eee' }"
+      :style="{ background: white, color: '#2D303B', border: '1px solid #eee' }"
       >基础白色<div class="value">{{white}}</div></div>
       <div class="demo-color-box demo-color-box-other bg-transparent">透明<div class="value">Transparent</div>
       </div>
