@@ -10,22 +10,7 @@ install:
   - yarn --frozen-lockfile
   - yarn lint --fix
   - yarn test
-script:
-  - yarn stdver
-  # deploy 和 dist 之前必须生成一些必要文件
-  - yarn build:file
-  - yarn deploy:build
-  - yarn dist
 cache: yarn
-deploy:
-  - provider: pages
-    skip-cleanup: true
-    keep-history: true
-    local-dir: examples/element-ui
-    github-token: $GITHUB_TOKEN
-  - provider: npm
-    email: levy9527@qq.com
-    api_key: $NPM_TOKEN
-    skip-cleanup: true
 after_script:
-  - ./notify.sh
+  - sh build/deploy-theme.sh
+  - sh ./notify.sh
