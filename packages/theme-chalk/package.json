@@ -1,6 +1,6 @@
 {
   "name": "@spaas/spaas-theme-chalk",
-  "version": "2.12.0",
+  "version": "2.12.3",
   "description": "Element component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
@@ -21,7 +21,7 @@
   ],
   "homepage": "https://github.com/FEMessage/element#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cssmin": "^0.1.7",
     "gulp-sass": "^3.1.0",
     "gulp-autoprefixer": "^4.0.0"
