@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "gulp build",
-    "pub": "gulp build && npm publish --registry=http://129.204.96.188:4873"
+    "pub": "gulp build && npm publish"
   },
   "repository": {
     "type": "git",
