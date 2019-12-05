@@ -1,13 +1,8 @@
+sudo: false
 language: node_js
-node_js:
-  - 10
-git:
-  depth: 3
-install:
-  - yarn --frozen-lockfile
-  - yarn lint --fix
-  - yarn test
-cache: yarn
-after_script:
-  - sh build/deploy-theme.sh
-  - sh ./notify.sh
+node_js: 10
+addons:
+  chrome: stable
+after_success:
+- sh build/deploy-theme.sh
+- cat ./test/unit/coverage/lcov.info | ./node_modules/.bin/coveralls
